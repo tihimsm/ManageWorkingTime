@@ -1,0 +1,47 @@
+name: ManageWorkingTime
+configs:
+  Debug: debug
+  Release: release
+configFiles:
+  Debug: Configurations/ManageWorkingTime-Debug.xcconfig
+  Release: Configurations/ManageWorkingTime-Release.xcconfig
+schemes:
+  ManageWorkingTime:
+    build:
+      targets:
+        ManageWorkingTime: all
+    run:
+      config: Debug
+      commandLineArguments:
+        -FIRAnalyticsDebugEnabled: YES
+    profile:
+      config: Release
+    analyze:
+      config: Debug
+    archive:
+      config: Release
+      revealArchiveInOrganizer: false
+fileGroups:
+  - Configurations
+targets:
+  ManageWorkingTime:
+    type: application
+    platform: iOS
+    sources:
+      - ManageWorkingTime
+    settings:
+      CURRENT_PROJECT_VERSION: 1
+    preBuildScripts:
+      - name: SwiftGen
+        script: |
+                $PODS_ROOT/SwiftGen/bin/swiftgen config run --config $SRCROOT/ManageWorkingTime/SwiftGen/swiftgen.yml
+    postCompileScripts:
+      - name: Swiftlint
+        script: Pods/SwiftLint/swiftlint autocorrect --format
+
+  ManageWorkingTimeAppTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: ManageWorkingTimeTests
+    dependencies:
+      - target: ManageWorkingTime

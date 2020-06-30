@@ -11,7 +11,7 @@ import SwiftUI
 struct LandmarkDetail: View {
     @EnvironmentObject var userData: UserData
     var landmark: Landmark
-    
+
     var landmarkIndex: Int {
         userData.landmarks.firstIndex(where: { $0.id == landmark.id })!
     }
@@ -21,7 +21,7 @@ struct LandmarkDetail: View {
             MapView(coordinate: landmark.locationCoordinate)
                 .edgesIgnoringSafeArea(.top)
                 .frame(height: 300)
-            
+
             CircleImage(image: landmark.image)
                 .offset(y: -130)
                 .padding(.bottom, -130)
@@ -38,7 +38,7 @@ struct LandmarkDetail: View {
                                 .foregroundColor(.yellow)
                         } else {
                             Image(systemName: "star")
-                            .foregroundColor(.gray)
+                                .foregroundColor(.gray)
                         }
                     }
                 }
@@ -52,7 +52,7 @@ struct LandmarkDetail: View {
                 }
             }
             .padding()
-            
+
             Spacer()
         }
         .navigationBarTitle(Text(landmark.name), displayMode: .inline)

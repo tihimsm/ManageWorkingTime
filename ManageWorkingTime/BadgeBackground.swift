@@ -23,7 +23,7 @@ struct BadgeBackground: View {
                         y: height * (0.20 + HexagonParameters.adjustment)
                     )
                 )
-                
+
                 HexagonParameters.points.forEach {
                     path.addLine(
                         to: .init(
@@ -31,7 +31,7 @@ struct BadgeBackground: View {
                             y: height * $0.useHeight.0 * $0.yFactors.0
                         )
                     )
-                    
+
                     path.addQuadCurve(
                         to: .init(
                             x: xOffset + width * $0.useWidth.1 * $0.xFactors.1,
@@ -49,7 +49,7 @@ struct BadgeBackground: View {
                 startPoint: .init(x: 0.5, y: 0),
                 endPoint: .init(x: 0.5, y: 0.6)
             ))
-            .aspectRatio(1, contentMode: .fit)
+                .aspectRatio(1, contentMode: .fit)
         }
     }
     static let gradientStart = Color(red: 239.0 / 255, green: 120.0 / 255, blue: 221.0 / 255)

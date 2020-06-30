@@ -15,7 +15,7 @@ struct LandmarkList: View {
         NavigationView {
             List {
                 Toggle(isOn: $userData.showFavoritesOnly) {
-                    Text("Favorites Only")
+                    Text(L10n.favoritesOnly)
                 }
                 ForEach(userData.landmarks) { landmark in
                     if !self.userData.showFavoritesOnly || landmark.isFavorite {
