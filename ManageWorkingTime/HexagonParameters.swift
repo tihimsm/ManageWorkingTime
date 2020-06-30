@@ -1,10 +1,9 @@
-//
-//  HexagonParameters.swift
-//  ManageWorkingTime
-//
-//  Created by tihimsm on 2020/06/30.
-//  Copyright © 2020 tihimsm. All rights reserved.
-//
+/*
+ See LICENSE folder for this sample’s licensing information.
+
+ Abstract:
+ Size, position, and other information used to draw a badge.
+ */
 
 import SwiftUI
 
@@ -17,7 +16,6 @@ struct HexagonParameters {
     }
 
     static let adjustment: CGFloat = 0.085
-
     static let points = [
         Segment(
             useWidth: (1.00, 1.00, 1.00),

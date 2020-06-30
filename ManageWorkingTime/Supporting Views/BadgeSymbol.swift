@@ -1,15 +1,15 @@
-//
-//  BadgeSymbol.swift
-//  ManageWorkingTime
-//
-//  Created by tihimsm on 2020/06/30.
-//  Copyright © 2020 tihimsm. All rights reserved.
-//
+/*
+ See LICENSE folder for this sample’s licensing information.
+
+ Abstract:
+ A view that display a symbol in a badge.
+ */
 
 import SwiftUI
 
 struct BadgeSymbol: View {
     static let symbolColor = Color(red: 79.0 / 255, green: 79.0 / 255, blue: 191.0 / 255)
+
     var body: some View {
         GeometryReader { geometry in
             Path { path in
