@@ -12,6 +12,10 @@ import Foundation
 internal enum L10n {
     /// Favorites Only
     internal static let favoritesOnly = L10n.tr("Localizable", "FavoritesOnly")
+    /// Featured
+    internal static let featuredNaviagationTitle = L10n.tr("Localizable", "FeaturedNaviagationTitle")
+    /// Landmarks
+    internal static let landmarksNaviagationTitle = L10n.tr("Localizable", "LandmarksNaviagationTitle")
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name
