@@ -1,10 +1,9 @@
-//
-//  Badge.swift
-//  ManageWorkingTime
-//
-//  Created by tihimsm on 2020/06/30.
-//  Copyright © 2020 tihimsm. All rights reserved.
-//
+/*
+ See LICENSE folder for this sample’s licensing information.
+
+ Abstract:
+ A view that displays a badge.
+ */
 
 import SwiftUI
 
@@ -14,8 +13,7 @@ struct Badge: View {
     var badgeSymbols: some View {
         ForEach(0..<Badge.rotationCount) { i in
             RotatedBadgeSymbol(
-                angle: .degrees(Double(i) / Double(Badge.rotationCount)) * 360.0
-            )
+                angle: .degrees(Double(i) / Double(Badge.rotationCount)) * 360.0)
         }
         .opacity(0.5)
     }

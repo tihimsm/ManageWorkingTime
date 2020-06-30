@@ -1,10 +1,9 @@
-//
-//  Landmark.swift
-//  ManageWorkingTime
-//
-//  Created by tihimsm on 2020/06/30.
-//  Copyright © 2020 tihimsm. All rights reserved.
-//
+/*
+ See LICENSE folder for this sample’s licensing information.
+
+ Abstract:
+ The model for an individual landmark.
+ */
 
 import SwiftUI
 import CoreLocation
@@ -22,8 +21,7 @@ struct Landmark: Hashable, Codable, Identifiable {
     var locationCoordinate: CLLocationCoordinate2D {
         CLLocationCoordinate2D(
             latitude: coordinates.latitude,
-            longitude: coordinates.longitude
-        )
+            longitude: coordinates.longitude)
     }
 
     enum Category: String, CaseIterable, Codable, Hashable {

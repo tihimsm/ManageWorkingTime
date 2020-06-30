@@ -1,10 +1,9 @@
-//
-//  RotatedBadgeSymbol.swift
-//  ManageWorkingTime
-//
-//  Created by tihimsm on 2020/06/30.
-//  Copyright © 2020 tihimsm. All rights reserved.
-//
+/*
+ See LICENSE folder for this sample’s licensing information.
+
+ Abstract:
+ A view that displays a rotated version of a badge symbol.
+ */
 
 import SwiftUI
 

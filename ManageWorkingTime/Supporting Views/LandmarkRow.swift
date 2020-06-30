@@ -1,10 +1,9 @@
-//
-//  LandmarkRow.swift
-//  ManageWorkingTime
-//
-//  Created by tihimsm on 2020/06/30.
-//  Copyright © 2020 tihimsm. All rights reserved.
-//
+/*
+ See LICENSE folder for this sample’s licensing information.
+
+ Abstract:
+ A single row to be displayed in a list of landmarks.
+ */
 
 import SwiftUI
 
@@ -13,7 +12,9 @@ struct LandmarkRow: View {
 
     var body: some View {
         HStack {
-            landmark.image.resizable().frame(width: 50, height: 50)
+            landmark.image
+                .resizable()
+                .frame(width: 50, height: 50)
             Text(landmark.name)
             Spacer()
 
