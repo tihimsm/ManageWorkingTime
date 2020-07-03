@@ -26,6 +26,7 @@ internal enum Asset {
     }
     internal enum Images {
         internal static let charleyrivers = ImageAsset(name: "charleyrivers")
+        internal static let charleyriversFeature = ImageAsset(name: "charleyrivers_feature")
         internal static let chilkoottrail = ImageAsset(name: "chilkoottrail")
         internal static let chincoteague = ImageAsset(name: "chincoteague")
         internal static let hiddenlake = ImageAsset(name: "hiddenlake")
@@ -34,7 +35,9 @@ internal enum Asset {
         internal static let rainbowlake = ImageAsset(name: "rainbowlake")
         internal static let silversalmoncreek = ImageAsset(name: "silversalmoncreek")
         internal static let stmarylake = ImageAsset(name: "stmarylake")
+        internal static let stmarylakeFeature = ImageAsset(name: "stmarylake_feature")
         internal static let turtlerock = ImageAsset(name: "turtlerock")
+        internal static let turtlerockFeature = ImageAsset(name: "turtlerock_feature")
         internal static let twinlake = ImageAsset(name: "twinlake")
         internal static let umbagog = ImageAsset(name: "umbagog")
         internal static let yukonCharleyrivers = ImageAsset(name: "yukon_charleyrivers")
