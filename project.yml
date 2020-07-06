@@ -23,6 +23,11 @@ schemes:
       revealArchiveInOrganizer: false
 fileGroups:
   - Configurations
+packages:
+  SwiftUICharts:
+    url: https://github.com/AppPear/ChartView
+    from: 1.5.3
+    name: SwiftUICharts
 targets:
   ManageWorkingTime:
     type: application
@@ -31,6 +36,8 @@ targets:
       - ManageWorkingTime
     settings:
       CURRENT_PROJECT_VERSION: 1
+    dependencies:
+      - package: SwiftUICharts
     preBuildScripts:
       - name: SwiftGen
         script: |
